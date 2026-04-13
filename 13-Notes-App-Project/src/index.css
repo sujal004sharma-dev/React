@@ -1,0 +1,20 @@
+@import "tailwindcss";
+
+/* Hide scrollbar (default) */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+/* Show scrollbar on large screens */
+@media (min-width: 1024px) {
+  .scrollbar-show::-webkit-scrollbar {
+    display: block;
+  }
+  .scrollbar-show {
+    scrollbar-width: auto;
+  }
+}
